@@ -1,0 +1,22 @@
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 992px) {
+    @content
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1200px) {
+    @content
+  }
+}
+
+@mixin background-hd($angle, $color-stop1, $color-stop2, $color-stop3, $img-bg) {
+  background: linear-gradient($angle, $color-stop1, $color-stop2, $color-stop3), url($img-bg) no-repeat scroll center;
+  background-size: cover;
+}

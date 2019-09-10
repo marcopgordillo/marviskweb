@@ -9,9 +9,9 @@ const purgecss    = require('gulp-purgecss');
 function compileSass() {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass())
-        .pipe(purgecss({
-            content: ['./dist/*.html']
-        }))
+        /*.pipe(purgecss({
+            content: ['./dist/!*.html']
+        }))*/
         .pipe(gulp.dest("./src/css"))
         .pipe(cleanCSS())
         .pipe(rename({suffix: '.min'}))
@@ -44,7 +44,7 @@ function serve() {
         server: "./dist"
     });
 
-    gulp.watch('src/scss/**/*.scss', compileSass);
+    gulp.watch('./src/scss/**/*.scss', compileSass);
     gulp.watch(['./dist/*.html', './src/css/style.css', './dest/js/*.js']).on('change', browserSync.reload);
 }
 
