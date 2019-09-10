@@ -1,0 +1,32 @@
+{
+  "name": "mgproject",
+  "version": "1.0.0",
+  "description": "MarVisk page",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:Marvisk/marviskweb.git"
+  },
+  "keywords": [
+    "web page",
+    "Marvisk"
+  ],
+  "author": "Marco Gordillo <marcopgordillo@gmail.com>",
+  "license": "",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-purgecss": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "purgecss": "^1.3.0"
+  }
+}
